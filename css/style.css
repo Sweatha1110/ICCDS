@@ -6,27 +6,17 @@ body{
     background: linear-gradient(90deg, rgba(66,15,159,1) 5%, rgba(111,14,111,1) 59%);
 }
 .navbar-contents{
-    margin-left: 5rem;
+    margin-left: 13rem;
 }
-nav div ul li{
-    padding-right: 20px;
-    
-}
-nav{
-    background-color: #810081;
-    border-bottom: 6px solid goldenrod;
-    
-}
+
 a{
     color: white;
 }
-a:hover{
-    color: white;
-}
+
 .nav-link
 {
-    font-size: 1.25rem;
-     
+    font-size: 14px;
+    /* margin-right: 10px;  */
 }
 .em{
     font-weight: bolder;
@@ -38,11 +28,9 @@ pre{
 /* conference */
 .conference{
     font-family: 'Tilt Neon', cursive;
-    margin-top: 75px;
-    height: 725px;
+    padding: 10%;
     color: white;
     line-height: 2;
-    padding: 50px 0;
     background-image: url('../images/admin.png');
     background-color: rgba(0, 0, 0, 1);
     background-repeat: no-repeat;
@@ -55,6 +43,31 @@ pre{
     text-align: center;
     padding-top: 35px;
 }
+
+/* CHECK */
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+  }
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: gold;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+
+
 
 .date{
     font-weight: bolder;
@@ -185,18 +198,6 @@ button img{
     width: 20px;
 }
   
-.reveal{
-    position: relative;
-    transform: translateY(102px);
-    opacity: 0;
-    transition: all 1.35s ease;
-}
-
-.reveal.active{
-    transform: translateY(0px);
-    opacity: 1;
-}
-
 .technical-team:hover{
     transform: scale(1.025);
 }
@@ -299,13 +300,6 @@ h4
         margin-top: 28rem;
     }
     
-    .conference img{
-    height: 100px;
-    width: 100px;
-    margin: 1.75rem;
-    position: relative;
-    top: 11%;
-    }
     .dev-names
     {
         font-size: 2rem;
@@ -349,49 +343,6 @@ h4
    
 }
 
-/* navbar resize */
-
-@media (min-width: 1385px){
-    .navbar-expand-custom {
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-    }
-    .navbar-expand-custom .navbar-nav {
-        flex-direction: row;
-    }
-    .navbar-expand-custom .dropdown-menu {
-        position: absolute;
-    }
-    .navbar-expand-custom .nav-link {
-     
-        padding-left: .5rem;
-    }
-    .navbar-expand-custom > .container {
-        flex-wrap: nowrap;
-    }
-    .navbar-expand-custom .navbar-collapse {
-        display: flex!important;
-        flex-basis: auto;
-    }
-    .navbar-expand-custom .navbar-toggler {
-        display: none;
-    }
-
-}
-
-@media screen and (max-width:1335px) 
-{
-    .conference
-    {
-        margin-top: .35rem;
-    }    
-
-    .navbar-brand
-    {
-        margin: 0;
-    }
-}
 
 .button {
     border: 1px solid black;
