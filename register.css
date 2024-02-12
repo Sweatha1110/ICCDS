@@ -18,6 +18,9 @@
     flex-direction: column;
     align-items: center; /* Center content horizontally */
 }
+.register-content{
+    font-size: 23px;
+}
 
 button {
     position: relative;
