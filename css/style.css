@@ -5,19 +5,29 @@ body{
     background: rgb(66,15,159);
     background: linear-gradient(90deg, rgba(66,15,159,1) 5%, rgba(111,14,111,1) 59%);
 }
-.navbar-contents{
-    margin-left: 13rem;
+
+
+.navbar-brand{
+    color: white;
 }
 
-a{
-    color: white;
+.navbar-collapse
+{
+    flex-grow: 0;
 }
 
 .nav-link
 {
-    font-size: 14px;
-    /* margin-right: 10px;  */
+    font-size: 16px;
+    color: white;
+} 
+
+.navbar-toggler
+{
+    color: white;
+    /* background-color: white; */
 }
+
 .em{
     font-weight: bolder;
 }
@@ -27,16 +37,14 @@ pre{
 }
 /* conference */
 .conference{
-    font-family: 'Tilt Neon', cursive;
-    padding: 10%;
+    
     color: white;
     line-height: 2;
     background-image: url('../images/admin.png');
     background-color: rgba(0, 0, 0, 1);
     background-repeat: no-repeat;
     font-weight: bolder;
-    background-size: cover;
-    
+    background-size: cover; 
 }
 .conference h1{
     font-size: 3rem;
@@ -339,7 +347,23 @@ h4
         width: auto;
         
     }
-   
-   
+    .navbar-nav
+    {
+        width: 15rem;
+        border-radius: 2rem;
+        height: 22rem;
+        font-size: 16px;
+        text-align: center;
+        background-color: white;
+        position: absolute;
+        right: 0;
+        .nav-link
+        {
+            color: black;
+        }
+    }
 }
+   
+   
+
 
