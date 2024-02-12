@@ -1,9 +1,10 @@
 body{
     text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
     overflow-x: hidden;
     background: rgb(66,15,159);
     background: linear-gradient(90deg, rgba(66,15,159,1) 5%, rgba(111,14,111,1) 59%);
+    font-family: 'Outfit';
+  
 }
 .navbar-contents{
     margin-left: 13rem;
@@ -18,16 +19,14 @@ a{
     font-size: 14px;
     /* margin-right: 10px;  */
 }
-.em{
-    font-weight: bolder;
-}
+
 
 pre{
     color: white;
 }
 /* conference */
 .conference{
-    font-family: 'Tilt Neon', cursive;
+    
     padding: 10%;
     color: white;
     line-height: 2;
@@ -38,12 +37,25 @@ pre{
     background-size: cover;
     
 }
-.conference h1{
+
+
+.header 
+{
     font-size: 3rem;
     text-align: center;
     padding-top: 35px;
+    line-height: 0.5;
+    
+    
 }
+ .subheader
+{
+    margin-top: 2rem;
+    font-size:1.2rem;
+    line-height: 1.8;
+    
 
+}
 /* CHECK */
 .hover-underline-animation {
     display: inline-block;
@@ -69,10 +81,7 @@ pre{
 
 
 
-.date{
-    font-weight: bolder;
-    font-size: 1.5rem;
-}
+
 
 .btn
 {
@@ -92,7 +101,7 @@ pre{
 .about-navbar{
     font-size: 1.5rem;
     font-weight: bolder;
-    font-family: 'Montserrat', sans-serif;
+   
 
 }
 .about-contents{
@@ -123,7 +132,7 @@ span{
     color: white;
 }
 .call-for-paper-div{
-    padding-top: 70px;
+    padding-top: 1rem;
     padding-bottom: 50px;
 }
 
@@ -157,7 +166,7 @@ span{
 /* committee */
 
 #committee{
-    margin-top: 15rem;
+    /* margin-top: 15rem; */
     font-size: 1.25rem;
     background: rgb(66,15,159);
     background: linear-gradient(90deg, rgba(66,15,159,1) 5%, rgba(111,14,111,1) 59%);
@@ -165,6 +174,10 @@ span{
 
 #committee .card{
     margin: 30px 20px;
+}
+.keynote
+{
+    margin: auto 15rem;
 }
 .technical-team{
     margin: 50px 0px;
